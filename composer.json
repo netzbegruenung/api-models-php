@@ -1,0 +1,25 @@
+{
+    "name": "netzbegruenung/api-models",
+    "description": "Models for netzbegruenung/api-client",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maximilian Ruta",
+            "email": "maximilian.ruta@netzbegruenung.de"
+        }
+    ],
+    "require": {
+        "php": ">=7.2"
+    },
+    "suggest": {
+        "jms/serializer": "^3.0",
+        "symfony/yaml": "^3.3|^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Netzbegruenung\\Api\\Model\\": "src/"
+        },
+        "files": ["bootstrap.php"]
+    }
+}

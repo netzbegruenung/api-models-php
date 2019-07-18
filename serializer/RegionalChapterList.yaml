@@ -1,0 +1,6 @@
+Netzbegruenung\Api\Model\RegionalChapterList:
+  properties:
+    count:
+      type: integer
+    items:
+      type: array<Netzbegruenung\Api\Model\RegionalChapter>

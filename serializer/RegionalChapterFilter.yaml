@@ -1,0 +1,6 @@
+Netzbegruenung\Api\Model\RegionalChapterFilter:
+  properties:
+    limit:
+      type: integer
+    offset:
+      type: integer

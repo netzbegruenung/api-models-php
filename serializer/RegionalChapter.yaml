@@ -1,0 +1,8 @@
+Netzbegruenung\Api\Model\RegionalChapter:
+  properties:
+    id:
+      type: string
+    name:
+      type: string
+    type:
+      type: string

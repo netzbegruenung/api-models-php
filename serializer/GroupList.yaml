@@ -1,0 +1,4 @@
+Netzbegruenung\Api\Model\GroupList:
+  properties:
+    items:
+      type: array<Netzbegruenung\Api\Model\Group>

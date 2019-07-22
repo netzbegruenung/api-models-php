@@ -1,0 +1,13 @@
+Netzbegruenung\Api\Model\Group:
+  properties:
+    name:
+      type: string
+    type:
+      type: string
+    active:
+      type: boolean
+    level:
+      type: string
+    externalRefs:
+      type: array<Netzbegruenung\Api\Model\ExternalRef>
+

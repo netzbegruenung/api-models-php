@@ -1,0 +1,6 @@
+Netzbegruenung\Api\Model\ExternalRef:
+  properties:
+    type:
+      type: string
+    key:
+      type: string

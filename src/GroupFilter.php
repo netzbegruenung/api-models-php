@@ -27,6 +27,11 @@ class GroupFilter
     /**
      * @var string|null
      */
+    protected $slug;
+
+    /**
+     * @var string|null
+     */
     protected $level;
 
     /**
@@ -75,6 +80,22 @@ class GroupFilter
     public function setActive(?bool $active): void
     {
         $this->active = $active;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getSlug(): ?string
+    {
+        return $this->slug;
+    }
+
+    /**
+     * @param string|null $slug
+     */
+    public function setSlug(?string $slug): void
+    {
+        $this->slug = $slug;
     }
 
     /**

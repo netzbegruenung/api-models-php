@@ -12,6 +12,11 @@ class Group
     /**
      * @var string|null
      */
+    protected $slug;
+
+    /**
+     * @var string|null
+     */
     protected $type;
 
     /**
@@ -43,6 +48,22 @@ class Group
     public function setName(?string $name): void
     {
         $this->name = $name;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getSlug(): ?string
+    {
+        return $this->slug;
+    }
+
+    /**
+     * @param string|null $slug
+     */
+    public function setSlug(?string $slug): void
+    {
+        $this->slug = $slug;
     }
 
     /**

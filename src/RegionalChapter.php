@@ -20,6 +20,11 @@ class RegionalChapter
     protected $type;
 
     /**
+     * @var string
+     */
+    protected $organization;
+
+    /**
      * @return string
      */
     public function getId(): string
@@ -65,5 +70,21 @@ class RegionalChapter
     public function setType(string $type): void
     {
         $this->type = $type;
+    }
+
+    /**
+     * @return string
+     */
+    public function getOrganization(): string
+    {
+        return $this->organization;
+    }
+
+    /**
+     * @param string $organization
+     */
+    public function setOrganization(string $organization): void
+    {
+        $this->organization = $organization;
     }
 }

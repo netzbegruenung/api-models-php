@@ -4,6 +4,8 @@ Netzbegruenung\Api\Model\Group:
       type: string
     type:
       type: string
+    slug:
+      type: string
     active:
       type: boolean
     level:

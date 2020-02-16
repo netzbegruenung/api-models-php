@@ -12,4 +12,3 @@ Netzbegruenung\Api\Model\Group:
       type: string
     externalRefs:
       type: array<Netzbegruenung\Api\Model\ExternalRef>
-

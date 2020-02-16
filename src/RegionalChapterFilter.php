@@ -25,6 +25,27 @@ class RegionalChapterFilter
     protected $idPrefix;
 
     /**
+     * @var string|null
+     */
+    protected $type;
+
+    /**
+     * @return string|null
+     */
+    public function getType(): ?string
+    {
+        return $this->type;
+    }
+
+    /**
+     * @param string|null $type
+     */
+    public function setType(?string $type): void
+    {
+        $this->type = $type;
+    }
+
+    /**
      * @return string|null
      */
     public function getIdPrefix(): ?string

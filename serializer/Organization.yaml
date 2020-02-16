@@ -4,3 +4,5 @@ Netzbegruenung\Api\Model\Organization:
       type: string
     name:
       type: string
+    regionalChapterIdPrefix:
+      type: string

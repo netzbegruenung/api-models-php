@@ -15,6 +15,27 @@ class Organization
     protected $name;
 
     /**
+     * @var string
+     */
+    protected $regionalChapterIdPrefix;
+
+    /**
+     * @return string
+     */
+    public function getRegionalChapterIdPrefix(): string
+    {
+        return $this->regionalChapterIdPrefix;
+    }
+
+    /**
+     * @param string $regionalChapterIdPrefix
+     */
+    public function setRegionalChapterIdPrefix(string $regionalChapterIdPrefix): void
+    {
+        $this->regionalChapterIdPrefix = $regionalChapterIdPrefix;
+    }
+
+    /**
      * @return string
      */
     public function getId(): string

@@ -15,9 +15,14 @@ class RegionalChapter
     protected $name;
 
     /**
-     * @var string
+     * @var string|null
      */
     protected $type;
+
+    /**
+     * @var Organization
+     */
+    protected $organization;
 
     /**
      * @return string
@@ -52,18 +57,34 @@ class RegionalChapter
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->type;
     }
 
     /**
-     * @param string $type
+     * @param string|null $type
      */
-    public function setType(string $type): void
+    public function setType(?string $type): void
     {
         $this->type = $type;
+    }
+
+    /**
+     * @return Organization
+     */
+    public function getOrganization(): ?Organization
+    {
+        return $this->organization;
+    }
+
+    /**
+     * @param Organization $organization
+     */
+    public function setOrganization(?Organization $organization): void
+    {
+        $this->organization = $organization;
     }
 }

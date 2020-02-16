@@ -1,0 +1,6 @@
+Netzbegruenung\Api\Model\OrganizationList:
+  properties:
+    count:
+      type: integer
+    items:
+      type: array<Netzbegruenung\Api\Model\Organization>

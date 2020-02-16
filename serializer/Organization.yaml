@@ -1,0 +1,6 @@
+Netzbegruenung\Api\Model\Organization:
+  properties:
+    id:
+      type: string
+    name:
+      type: string

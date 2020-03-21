@@ -7,6 +7,11 @@ class GroupFilter
     /**
      * @var string|null
      */
+    protected $organizationId;
+
+    /**
+     * @var string|null
+     */
     protected $externalRefsType;
 
     /**
@@ -33,6 +38,22 @@ class GroupFilter
      * @var string|null
      */
     protected $level;
+
+    /**
+     * @return string|null
+     */
+    public function getOrganizationId(): ?string
+    {
+        return $this->organizationId;
+    }
+
+    /**
+     * @param string|null $organizationId
+     */
+    public function setOrganizationId(?string $organizationId): void
+    {
+        $this->organizationId = $organizationId;
+    }
 
     /**
      * @return string|null

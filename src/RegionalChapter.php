@@ -20,7 +20,7 @@ class RegionalChapter
     protected $type;
 
     /**
-     * @var string
+     * @var Organization
      */
     protected $organization;
 
@@ -73,17 +73,17 @@ class RegionalChapter
     }
 
     /**
-     * @return string
+     * @return Organization
      */
-    public function getOrganization(): string
+    public function getOrganization(): ?Organization
     {
         return $this->organization;
     }
 
     /**
-     * @param string $organization
+     * @param Organization $organization
      */
-    public function setOrganization(string $organization): void
+    public function setOrganization(?Organization $organization): void
     {
         $this->organization = $organization;
     }

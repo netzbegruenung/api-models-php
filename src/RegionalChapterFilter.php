@@ -15,6 +15,69 @@ class RegionalChapterFilter
     protected $offset;
 
     /**
+     * @var string|null
+     */
+    protected $query;
+
+    /**
+     * @var string|null
+     */
+    protected $idPrefix;
+
+    /**
+     * @var string|null
+     */
+    protected $type;
+
+    /**
+     * @return string|null
+     */
+    public function getType(): ?string
+    {
+        return $this->type;
+    }
+
+    /**
+     * @param string|null $type
+     */
+    public function setType(?string $type): void
+    {
+        $this->type = $type;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getIdPrefix(): ?string
+    {
+        return $this->idPrefix;
+    }
+
+    /**
+     * @param string|null $idPrefix
+     */
+    public function setIdPrefix(?string $idPrefix): void
+    {
+        $this->idPrefix = $idPrefix;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getQuery(): ?string
+    {
+        return $this->query;
+    }
+
+    /**
+     * @param string|null $query
+     */
+    public function setQuery(?string $query): void
+    {
+        $this->query = $query;
+    }
+
+    /**
      * @return int|null
      */
     public function getLimit(): ?int

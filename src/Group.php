@@ -5,6 +5,11 @@ namespace Netzbegruenung\Api\Model;
 class Group
 {
     /**
+     * @var Organization|null
+     */
+    protected $organization;
+
+    /**
      * @var string|null
      */
     protected $name;
@@ -33,6 +38,22 @@ class Group
      * @var ExternalRef[]
      */
     protected $externalRefs = [];
+
+    /**
+     * @return Organization|null
+     */
+    public function getOrganization(): ?Organization
+    {
+        return $this->organization;
+    }
+
+    /**
+     * @param Organization|null $organization
+     */
+    public function setOrganization(?Organization $organization): void
+    {
+        $this->organization = $organization;
+    }
 
     /**
      * @return string|null

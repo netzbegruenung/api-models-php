@@ -7,4 +7,4 @@ Netzbegruenung\Api\Model\RegionalChapter:
     type:
       type: string
     organization:
-      type: string
+      type: Netzbegruenung\Api\Model\Organization

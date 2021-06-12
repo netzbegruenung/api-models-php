@@ -25,6 +25,11 @@ class RegionalChapter
     protected $organization;
 
     /**
+     * @var string|null
+     */
+    protected $zipCode;
+
+    /**
      * @return string
      */
     public function getId(): string
@@ -86,5 +91,21 @@ class RegionalChapter
     public function setOrganization(?Organization $organization): void
     {
         $this->organization = $organization;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getZipCode() : ?string
+    {
+        return $this->zipCode;
+    }
+
+    /**
+     * @param string|null $zipCode
+     */
+    public function setZipCode(?string $zipCode): void
+    {
+        $this->zipCode = $zipCode;
     }
 }

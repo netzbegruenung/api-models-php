@@ -6,5 +6,7 @@ Netzbegruenung\Api\Model\RegionalChapter:
       type: string
     type:
       type: string
+    zipCode:
+      type: string
     organization:
       type: Netzbegruenung\Api\Model\Organization
